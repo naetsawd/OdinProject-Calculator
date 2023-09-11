@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p id="title">Simple Calculator</h1>
+    <div id="container">
+        <div id="window">
+            <h2 id="input" class="text"></h2>
+            <h1 id="result" class="text"></h1>
+        </div>
+        <div id="keypad">
+            <button onclick="clearWindow()" class="keypadTop" accesskey="Escape">CLEAR</button>
+            <button onclick="deleteLast()" class="keypadTop" accesskey="Backspace">DELETE</button>
+            <button data-keycode="" onclick="keypadInput(this.value)" value="7" accesskey="7">7</button>
+            <button onclick="keypadInput(this.value)" value="8" accesskey="8">8</button>
+            <button onclick="keypadInput(this.value)" value="9" accesskey="9">9</button>
+            <button onclick="keypadInput(this.value)" value="/" accesskey="/">÷</button>
+            <button onclick="keypadInput(this.value)" value="4" accesskey="4">4</button>
+            <button onclick="keypadInput(this.value)" value="5" accesskey="5">5</button>
+            <button onclick="keypadInput(this.value)" value="6" accesskey="6">6</button>
+            <button onclick="keypadInput(this.value)" value="*" accesskey="*">×</button>
+            <button onclick="keypadInput(this.value)" value="1" accesskey="1">1</button>
+            <button onclick="keypadInput(this.value)" value="2" accesskey="2">2</button>
+            <button onclick="keypadInput(this.value)" value="3" accesskey="3">3</button>
+            <button onclick="keypadInput(this.value)" value="-" accesskey="-">−</button>
+            <button onclick="equals()" value="=" accesskey="Enter">=</button>
+            <button onclick="keypadInput(this.value)" value="0" accesskey="0">0</button>
+            <button onclick="keypadInput(this.value)" value="." accesskey=".">.</button>
+            <button onclick="keypadInput(this.value)" value="+" accesskey="+">+</button>            
+        </div>
+    </div>
+</body>
+</html>
